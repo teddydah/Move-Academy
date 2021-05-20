@@ -1,0 +1,460 @@
+/* TOOLS
+   ========================================================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #363636;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+img {
+   max-width: 100%;
+}
+
+/* UTILITIES
+   ========================================================================== */
+
+h1, h2, h3,
+nav,
+.btn {
+  font-family: 'Economica', sans-serif;
+}
+
+h1, h3 {
+  color: #7e4a7c;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 1em 0 1.5em 0;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #b878b5;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0.5em 0;
+}
+
+a {
+  color: #fff;
+}
+
+nav a,
+.more a,
+footer a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;  
+}
+
+.clear {
+  clear: both;
+}
+
+/* HEADER
+   ========================================================================== */
+
+header {
+  border-top: 5px solid #7e4a7c;
+}
+
+header img {
+  margin: 3em 0 2em 0;
+}
+
+/* NAV
+   ========================================================================== */
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #7e4a7c;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+
+nav li:hover, 
+nav li:focus {
+	background-color: #b878b5;
+	color: #7e4a7c;
+}
+
+/* MAIN
+   ========================================================================== */
+
+.about,
+.staff,
+.classes {
+  margin-bottom: 3em;
+}
+
+
+.school,
+.school .group,
+.teachers {
+  text-align: center;
+}
+
+.school p,
+.teachers p {
+  margin-bottom: 1.35em;
+}
+
+em {
+  color: #7e4a7c;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #7e4a7c;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.more {
+  display: inline-block;
+  text-decoration: none;
+	font-size: 2rem;
+	padding: 0.75em 1em;
+}
+
+.more:hover, 
+.more:focus {
+	background-color: #b878b5;
+}
+
+/* -- About the school -- */
+
+.about {
+  flex-direction: column;
+  text-align: left;
+}
+
+.about li {
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+.about li::before {
+  padding-right: 1rem;
+	content: url(../img/puce-fleche.png);
+}
+
+.school p,
+aside {
+  text-align: justify;
+}
+
+.school {
+  width: 100%;
+}
+
+aside {
+	width: 100%;
+	margin-top: 3em;
+}
+
+aside ul {
+	padding: 0;
+}
+
+/* -- Our teachers -- */
+
+.staff {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.teachers {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+figure {
+  width: 100%;
+	margin: 0 0 3em 0;
+}
+
+figure:nth-child(4) {
+  margin-bottom: 0;
+}
+
+/* -- Our classes -- */
+
+table {
+  width: 90%;
+  font-size: 1.1rem;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #b878b5;
+  padding: 1em;
+}
+
+table th {
+  background-color: #7e4a7c;
+  color: #fff;
+  font-weight: bold;
+}
+
+table td:empty {
+  background-color: #ffeefe;
+}
+
+td:first-of-type {
+	font-weight: bold;
+	padding: 1em 2em;
+}
+
+/* -- Book your lesson -- */
+
+.booking {
+  margin-bottom: 4.5em;
+}
+
+form {
+  border: 1px solid #7e4a7c;
+	color: #7e4a7c;
+	font-weight: bold;
+	padding: 1.5em;
+}
+
+fieldset {
+	padding: 0;
+	border: 0;
+}
+
+.item-1,
+.item-2 {
+	justify-content: space-between;
+	flex-direction: column;
+	background-color: #ffeefe;
+	margin-bottom: 1.5em;
+	padding: 2em 1em;
+}
+
+.item-1 div,
+.item-2 div {
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+	margin: 0 0.75em 0.5em 0;
+}
+
+input,
+select {
+  background-color: #fff;
+	width: 100%;
+	border: 1px solid #7e4a7c;
+	padding: 0.35em;
+	vertical-align: middle;
+}
+
+.submit {
+	text-align: center;
+}
+
+button {
+	border: none;
+	font-size: 2.5rem;
+	padding: 0.5em 0.8em;
+}
+
+/* FOOTER
+   ========================================================================== */
+
+footer {
+	background-color: #7E4A7C;
+	color: #fff;
+	text-align: center;
+	padding: 2em 0;
+}
+
+footer a {
+	font-size: 3rem;
+	margin: 0 0.7em;
+}
+
+.copyright {
+  background-color: #444;
+  color: #fff;
+  font-size: 1.4rem;
+	text-align: center;
+	padding: 2em;
+}
+
+.copyright img {
+	width: 3.5em;
+}
+
+/* MEDIA QUERIES
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+  /* -- UTILITIES -- */
+  
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  /* -- NAV -- */
+  
+  nav ul {
+    flex-direction: row;
+    padding: 0.35em 0;
+  }
+  
+  nav a:hover, 
+  nav a:focus {
+  	background-color: #fff;
+  	color: #7e4a7c;
+  }
+  
+  /* -- MAIN -- */
+  
+  .school,
+  .school .group,
+  .teachers {
+    text-align: left;
+  }
+  
+  /* About the school */
+  
+  .about {
+    flex-direction: row;
+  }
+  
+  .school {
+    text-align: justify;
+    width: 70%;
+    margin-right: 3em;
+  }
+  
+  aside {
+    width: 65%;
+  	margin-top: 5em;
+  }
+  
+  /* Our teachers */
+  
+  .teachers {
+    text-align: left;
+  }
+  
+  figure {
+    width: 48%;
+  	margin: 0 0 3em 0;
+  }
+  
+  figure:nth-child(3),
+  figure:nth-child(4) {
+    margin-bottom: 0;
+  }
+  
+  /* Our classes */
+
+  table {
+    font-size: 1.6rem;
+  }
+  
+  /* Book your lesson */
+  
+  .item-1,
+  .item-2 {
+  	flex-direction: row;
+  	text-align: left;
+  }
+  
+  .item-1 div {
+  	width: 45%;
+  }
+  
+  .item-2 div {
+  	width: 30%;
+  }
+  
+  .item-1 div,
+  .item-2 div {
+    margin: 0;
+  }
+  
+  input,
+  select {
+  	width: 70%;
+  	margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* -- MAIN -- */
+  
+  .about img,
+  .staff img {
+    float: left;
+    padding-right: 1.25em;
+  }
+  
+  /* About the school */
+  
+  aside {
+    width: 30%;
+  }
+  
+  /* Book your lesson */
+  
+  label {
+    display: inline;
+  }
+}
